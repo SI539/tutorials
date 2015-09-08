@@ -1,4 +1,6 @@
-#Tutorial for Mac
+#Setup Git at People Server
+--
+#Mac
 ##Set Up the Git Server
 #### Step 1. Connect to the people.si server through SSH
 (1) In your terminal, connect to people.si server through SSH.
@@ -212,4 +214,4 @@ Now we finished setting up the SSH key. Next time you connect to the server with
 
 
 
-	
+	
