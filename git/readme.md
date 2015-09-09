@@ -1,7 +1,6 @@
-#Setup Git at People Server
---
-#Mac
-##Set Up the Git Server
+# Setup Git at People Server
+# Mac
+## Set Up the Git Server
 #### Step 1. Connect to the people.si server through SSH
 (1) In your terminal, connect to people.si server through SSH.
 
@@ -11,6 +10,8 @@
 
 (2) You will be prompted to enter the password, enter the Kerberos password and enter. While enetering the password, you will see nothing (no * or any indication). It is normal. Just enter your password and press the enter.
 
+---
+
 #### Step 2. Create a folder to be your git-server repository
 (1) Type the following command. One line at a time
 
@@ -19,6 +20,7 @@
 	$ cd website.git
 	$ git init --bare
 ```
+---
 
 #### Step 3. Hook the git-server repository to the folder actually display the web pages
 (1) Remember to change your_uniqname to your actual uniqname
@@ -36,7 +38,9 @@
 
 Now everything on the server side is set. You can close the terminal window.
 
-##Create a Git Repo on your own computer
+---
+
+## Create a Git Repo on your own computer
 * Note: This part of the tutorial assumes you already have git installed on your computer  
 
 (1) Create a folder where you wants to keep all of the files that will be used in your website. You can do it either through Finder or Terminal. In this tutorial, I'll assume you put the folder which is named `website_539` under your home folder.
@@ -77,11 +81,11 @@ Now everything on the server side is set. You can close the terminal window.
 
 
 
-##Generate SSH keys [Optional]The server can recognize the user through the SSH key, so we don’t need to enter our password every time we connect to the server or push new commits to the git server.  
+## Generate SSH keys [Optional]The server can recognize the user through the SSH key, so we don’t need to enter our password every time we connect to the server or push new commits to the git server.  
 The procedure is similar to the GitHub’s tutorial. The only deference is GitHub handles the server side automatically, but here we need to add the key to the server by ourselves. [GitHub tutorial](https://help.github.com/articles/generating-ssh-keys/)  
 
---
-####Step 1. Check for SSH Directory
+---
+#### Step 1. Check for SSH Directory
 (1) On your personal computer open the terminal and change the directory to ~/.ssh  
 
 ```
@@ -100,16 +104,16 @@ The procedure is similar to the GitHub’s tutorial. The only deference is GitHu
 	$ ls -al ~/.ssh
 	# Lists the files in your .ssh directory, if they exist
 ```
-	
+
 For example
 > id_rsa  
 > id_rsa.pub  
 > github_rsa  
 > github_rsa.pub  
- 
- 
 
---
+
+
+---
 #### Step 2. Generate a new SSH key
 (1) Within terminal, type the following command. Remember to subsitute in your Uniqname
 
@@ -122,15 +126,15 @@ For example
 ```
 	Enter file in which to save the key (/Users/you/.ssh/id_rsa): id_rsa_people_si
 ```
-	
+
 (3) <a name="passphrase"></a>You'll be asked to enter a passphrase (for safety issue, like a password). You will need to enter the passphrase later.
 
-```	
+```
 	Enter passphrase (empty for no passphrase): [Type a passphrase]
 	Enter same passphrase again: [Type passphrase again]
 ```
-	
---
+
+---
 #### Step 3. Add your key to the ssh-agent
 (1) Ensure ssh-agent is enabled:  
 
@@ -144,8 +148,8 @@ For example
 
 ```
 	$ ssh-add ~/.ssh/id_rsa_people_si
-``` 
---
+```
+---
 
 #### Step 4. Modify your config file
 (1) Type the following command in the terminal window.  
@@ -159,7 +163,7 @@ For example
 	  User your_uniqname
 	  IdentityFile ~/.ssh/id_rsa_people_si' >> config
 ```
---
+---
 
 #### Step 5. Upload your SSH Key to the server
 
@@ -173,7 +177,7 @@ For example
 
 (2) You will be prompted to enter the password, enter the Kerberos password and enter. While enetering the password, you will see nothing (no * or any indication). It is normal. Just enter your password and press the enter.
 
---
+---
 
 #### Step 6. Setting up the SSH key on people.si server
 (1) In your terminal, connect to people.si server through SSH.
@@ -188,7 +192,7 @@ For example
 
 ```
 	$ ls -la
-	
+
 	...
 	drwxr-x---.  3 uniqname mail      4096 Sep 29  2014 etc/
 	-rw-r--r--   1 uniqname uniqname   733 Sep  1 17:21 id_rsa_people_si.pub
@@ -207,11 +211,3 @@ For example
 ```
 
 Now we finished setting up the SSH key. Next time you connect to the server with ssh or git from this computer, You don't need to enter the password again.
-  
-
-	
-
-
-
-
-	
