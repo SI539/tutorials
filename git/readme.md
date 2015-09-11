@@ -5,7 +5,7 @@
 (1) In your terminal, connect to people.si server through SSH.
 
 ```
-	$ ssh your_uniqname@your_uniqname.people.si.umich.edu
+$ ssh your_uniqname@your_uniqname.people.si.umich.edu
 ```
 
 (2) You will be prompted to enter the password, enter the Kerberos password and enter. While enetering the password, you will see nothing (no * or any indication). It is normal. Just enter your password and press the enter.
@@ -16,9 +16,9 @@
 (1) Type the following command. One line at a time
 
 ```
-	$ mkdir website.git
-	$ cd website.git
-	$ git init --bare
+$ mkdir website.git
+$ cd website.git
+$ git init --bare
 ```
 ---
 
@@ -26,14 +26,14 @@
 (1) Remember to change your_uniqname to your actual uniqname
 
 ```
-	$ echo '#!/bin/sh
-	GIT_WORD_TREE=/home/your_uniqname/public_html git checkout -f' > hooks/post-receive
+$ echo '#!/bin/sh
+GIT_WORD_TREE=/home/your_uniqname/public_html git checkout -f' > hooks/post-receive
 ```
 
 (2) Change the permission of the file we just created.
 
 ```
-	$ chmod +x hooks/post-receive
+$ chmod +x hooks/post-receive
 ```
 
 Now everything on the server side is set. You can close the terminal window.
@@ -46,34 +46,34 @@ Now everything on the server side is set. You can close the terminal window.
 (1) Create a folder where you wants to keep all of the files that will be used in your website. You can do it either through Finder or Terminal. In this tutorial, I'll assume you put the folder which is named `website_539` under your home folder.
 
 ```
-	$ mkdir ~/website_539
+$ mkdir ~/website_539
 ```
 
 (2) Open your terminal and change directory to the folder you just created.
 
 ```
-	$ cd ~/website_539
+$ cd ~/website_539
 ```
 
 (3) Initiate a git repo and connect it with the git server
 
 ```
-	$ git init .
-	$ git remote add origin ssh://your_uniqname@people.si.umich.edu:/home/your_uniqname/website.git
+$ git init .
+$ git remote add origin ssh://your_uniqname@people.si.umich.edu:/home/your_uniqname/website.git
 ```
 
 (4) Create an `index.html` file and put `Hello World!` in `website_539` folder. You can create it through any text editor, or through terminal
 
 ```
-	$ echo 'Hello World!' > index.html
+$ echo 'Hello World!' > index.html
 ```
 
 (5) Commit the change we made and push it back to the server. You might be prompted to enter your password again. Enter your Kerberos password.
 
 ```
-	$ git add .
-	$ git commit -m "init commit"
-	$ git push origin master
+$ git add .
+$ git commit -m "init commit"
+$ git push origin master
 ```
 
 (6) Open your browser and enter the URL `your_uniqname.people.si.umich.edu`. You can see the `Hello World!` show up in your browser.
@@ -89,20 +89,20 @@ The procedure is similar to the GitHub’s tutorial. The only deference is GitHu
 (1) On your personal computer open the terminal and change the directory to ~/.ssh  
 
 ```
-	$ cd ~/.ssh
+$ cd ~/.ssh
 ```  
 
 (2) If the directory does not exist (which is not likely), create one by yourself.  
 
 ```
-	$ mkdir ~/.ssh & cd ~/.ssh
+$ mkdir ~/.ssh & cd ~/.ssh
 ```
 
 (3) You can check for existing SSH keys on your computer
 
 ```
-	$ ls -al ~/.ssh
-	# Lists the files in your .ssh directory, if they exist
+$ ls -al ~/.ssh
+# Lists the files in your .ssh directory, if they exist
 ```
 
 For example
@@ -118,20 +118,20 @@ For example
 (1) Within terminal, type the following command. Remember to subsitute in your Uniqname
 
 ```
-	$ ssh-keygen -t rsa -b 4096 -C "your_uniqname"
+$ ssh-keygen -t rsa -b 4096 -C "your_uniqname"
 ```
 
 (2) When you're prompted to "Enter a file in which to save the key", name the file as `id_rsa_people_si` and press enter
 
 ```
-	Enter file in which to save the key (/Users/you/.ssh/id_rsa): id_rsa_people_si
+Enter file in which to save the key (/Users/you/.ssh/id_rsa): id_rsa_people_si
 ```
 
 (3) <a name="passphrase"></a>You'll be asked to enter a passphrase (for safety issue, like a password). You will need to enter the passphrase later.
 
 ```
-	Enter passphrase (empty for no passphrase): [Type a passphrase]
-	Enter same passphrase again: [Type passphrase again]
+Enter passphrase (empty for no passphrase): [Type a passphrase]
+Enter same passphrase again: [Type passphrase again]
 ```
 
 ---
@@ -157,11 +157,11 @@ For example
 	* Remember to have two space in the beginning of each line after second line ( ```Host people.si``` ).
 
 ```
-	$ echo '
-	Host people.si
-	  HostName your_uniqname.people.si.umich.edu
-	  User your_uniqname
-	  IdentityFile ~/.ssh/id_rsa_people_si' >> config
+$ echo '
+Host people.si
+  HostName your_uniqname.people.si.umich.edu
+  User your_uniqname
+  IdentityFile ~/.ssh/id_rsa_people_si' >> config
 ```
 ---
 
@@ -172,7 +172,7 @@ For example
 * Remember to upload the file with `.pub`.
 
 ```
-	$ scp id_rsa_people_is.pub your_uniqname@your_uniqname.people.si.umich.edu:/home/your_uniqname
+$ scp id_rsa_people_is.pub your_uniqname@your_uniqname.people.si.umich.edu:/home/your_uniqname
 ```
 
 (2) You will be prompted to enter the password, enter the Kerberos password and enter. While enetering the password, you will see nothing (no * or any indication). It is normal. Just enter your password and press the enter.
@@ -183,7 +183,7 @@ For example
 (1) In your terminal, connect to people.si server through SSH.
 
 ```
-	$ ssh your_uniqname@your_uniqname.people.si.umich.edu
+$ ssh your_uniqname@your_uniqname.people.si.umich.edu
 ```
 
 (2) You will be prompted to ask enter a password again. Enter your Kerberos password.
@@ -191,13 +191,13 @@ For example
 (3) Type `ls -la` and see if you can find the `id_rsa_people_si.pub` file you just uploaded
 
 ```
-	$ ls -la
+$ ls -la
 
-	...
-	drwxr-x---.  3 uniqname mail      4096 Sep 29  2014 etc/
-	-rw-r--r--   1 uniqname uniqname   733 Sep  1 17:21 id_rsa_people_si.pub
-	drwx------.  2 uniqname uniqname  4096 Sep  1 08:12 logs/
-	...
+    ...
+    drwxr-x---.  3 uniqname mail      4096 Sep 29  2014 etc/
+    -rw-r--r--   1 uniqname uniqname   733 Sep  1 17:21 id_rsa_people_si.pub
+    drwx------.  2 uniqname uniqname  4096 Sep  1 08:12 logs/
+    ...
 ```
 
 (4) Type the following lines one by one.
@@ -205,9 +205,9 @@ For example
 * You might be prompted to enter the passphrase. Enter the passphrase you entered in [Step 2-3] (#passphrase)
 
 ```
-   $ mkdir .ssh && chmod 700 .ssh
-   $ touch .ssh/authorized_keys && chmod 600 .ssh/authorized_keys
-   $ cat /home/you_uniqname/id_rsa_people_si.pub >> ~/.ssh/authorized_keys
+$ mkdir .ssh && chmod 700 .ssh
+$ touch .ssh/authorized_keys && chmod 600 .ssh/authorized_keys
+$ cat /home/you_uniqname/id_rsa_people_si.pub >> ~/.ssh/authorized_keys
 ```
 
 Now we finished setting up the SSH key. Next time you connect to the server with ssh or git from this computer, You don't need to enter the password again.
