@@ -23,7 +23,7 @@
 ---
 
 ### Step 4. If you correctly connected, you can see your file structure on the ftp server
-Now you can drag or drop files to that windows to upload your files, or double click files to download.
+Now you can drag and drop files to that window to upload your files, or double click files to download.
 ![FTP View](./pics/ftpview.png)
 
 ---
