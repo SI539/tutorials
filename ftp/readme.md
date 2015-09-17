@@ -1,4 +1,4 @@
-# FTP Client Setup Tutorial
+# Upload your page to UM ITS personal Server
 
 ## Cyberduck
 ### Step 1. Click "Open Connection"
