@@ -37,7 +37,7 @@ Now you can drag and drop files to that window to upload your files, or double c
 ![Bookmark View](./pics/bookmark_ready.png)
 
 ### Step 6. Upload your webpage to the server
-Let's take week1's discussion assignment for example
+Let's take week1's discussion assignment for example  
 1. I have file structure like this. I put the index.html file under the `dis1` folder and I put the picture inside the `dis1/pic/` folder.
 ![HTML files](./pics/html_files.png)
 2. In Cyberduck, go to `Public/html`, there should be a default index.html created by UM ITS
