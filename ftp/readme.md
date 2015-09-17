@@ -35,3 +35,14 @@ Now you can drag and drop files to that window to upload your files, or double c
 ![Bookmark Edit](./pics/bookmark_edit.png)
 3. Close the window, and now the site is stored in your bookmark
 ![Bookmark View](./pics/bookmark_ready.png)
+
+### Step 6. Upload your webpage to the server
+Let's take week1's discussion assignment for example
+1. I have file structure like this. I put the index.html file under the `dis1` folder and I put the picture inside the `dis1/pic/` folder.
+![HTML files](./pics/html_files.png)
+2. In Cyberduck, go to `Public/html`, there should be a default index.html created by UM ITS
+![Cyberduck Public](./pics/cyberduck_html.png)
+3. Drag your `ds1` folder on your computer to the `Public/html` folder on the server
+![File Upload](./pics/file_upload.png)
+4. Open your browser an type the URL `http://www-personal.umich.edu/~youruniqname/dis1` and you can see your webpage online
+![Webpage](./pics/webpage.png)
