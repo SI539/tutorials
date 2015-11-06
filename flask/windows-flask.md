@@ -70,7 +70,7 @@ This is how the terminal (command prompt) may look like when you first open it
 #### Step 2.1.2 Run Bitnami
 Execute the following in the command prompt
 ```
-cd C:\Bitnami\pythonstack\use_djangostack.bat
+C:\Bitnami\pythonstack\use_djangostack.bat
 ```
 ![Firewall](./winpics/step13.PNG)
 
