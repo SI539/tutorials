@@ -1,15 +1,17 @@
-# Flask Setup Tutorial
+# Flask Setup Tutorial (Mac)
 
-## 1. Install [BitNomi](https://bitnami.com/)
+This tutorial will help you install Python and Flask. Even though we are using a Django Stack installer, Flask installation will not be affected. The reason we are using a stack installer is to get you up and running in a breeze without the overhead of solving operating system compatibility issues.
+
+## 1. Install [BitNami](https://bitnami.com/)
 ### Step 1. Go to [https://bitnami.com](https://bitnami.com) and download **Django Stack**
-![Download BitNomi](./pics/download.png)
+![Download BitNami](./pics/download.png)
 
-### Step 2. Instll BitNomi
+### Step 2. Install BitNami
 #### Just click next if any of the step is not mentioned in this section.
 #### 1. Select Components
 Django and (at least) one Database  
 ![Select Components](./pics/components.png)
- 
+
 #### 2. Setup Installation Folder
 We would suggest you to install it under your home folder, so type ```~/pythonstack``` for the folder path  
 ![Setup Installation Folder](./pics/folderpath.png)
@@ -26,7 +28,7 @@ Select **NO** here
 **[Caution]** The installation might take around 20 mins  
 ![Install](./pics/install.png)
 
-## 2. Start BitNomi and Install Flask for Mac (and probably Linux)
+## 2. Start Bitnami and Install Flask for Mac (and probably Linux)
 ### Step 1. Open Terminal and Change to BitNami's directory
 #### 1. Change the directory
 
