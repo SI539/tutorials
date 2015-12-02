@@ -87,7 +87,7 @@ venv
 #### Step 5 - Create and activate virtual environment
 * Execute: ```virtualenv venv``` (creating virtualenv)
 * Execute (mac): ```source venv/bin/activate``` (activating virtualenv)
-* Execute (windows): ```venv/bin/activate```(activating virtualenv)
+* Execute (windows): ```venv\Scripts\activate```(activating virtualenv)
 
 #### Step 6 - Install Python / Flask plugins
 * Execute: ```pip install Flask```
