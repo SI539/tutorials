@@ -65,7 +65,7 @@ Pre-requisites:
 * heroku account
 * python
 * git
-* sense of humor
+* [Heroku Commandline Toolbelt](https://devcenter.heroku.com/articles/getting-started-with-python-o#local-workstation-setup)
 
 ##### Step 1 - Create a folder/directory
 This folder can be located anywhere on the system and all commands will be executed from within this directory
