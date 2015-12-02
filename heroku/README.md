@@ -71,8 +71,8 @@ Pre-requisites:
 This folder can be located anywhere on the system and all commands will be executed from within this directory
 
 ##### Step 2 - Download templates source code
-Extract the zip file into the newly created directory
-[Click here to download](./flasktemplates.zip)
+Extract zip file into the newly created directory
+[Click here to download zip file](https://github.com/SI539/tutorials/raw/master/heroku/flasktemplates.zip)
 
 #### Step 3 - Add ```.gitignore```
 Create a file named ```.gitignore``` to exclude additional files and folders before deploying to heroku. Contents of file:

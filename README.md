@@ -6,4 +6,4 @@
 3. [FTP - UM ITS Server setup](./ftp)
 4. [Git Setup](https://github.com/SI539/tutorials/tree/master/git) (Not Finished Yek)
 5. [Flask Setup](./flask)
-6. [Heroku & Hot to deploy](./Heroku)
+6. [Heroku & How to deploy](https://github.com/SI539/tutorials/tree/master/heroku)
