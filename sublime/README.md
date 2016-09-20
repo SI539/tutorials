@@ -17,4 +17,5 @@ Update Sublime Text to the latest version.
 2. [Sublime​ Linter](https://packagecontrol.io/packages/SublimeLinter)
 3. [Color Picker](https://packagecontrol.io/packages/ColorPicker)
 4. [JavaScript Snippets](https://packagecontrol.io/packages/JavaScript%20Snippets)
-5. [Bracket Highlighter](Bracket​Highlighter)
+5. [Bracket Highlighter](https://packagecontrol.io/packages/BracketHighlighter)
+6. [Emmet](https://packagecontrol.io/packages/Emmet)
