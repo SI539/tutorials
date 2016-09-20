@@ -19,3 +19,5 @@ Update Sublime Text to the latest version.
 4. [JavaScript Snippets](https://packagecontrol.io/packages/JavaScript%20Snippets)
 5. [Bracket Highlighter](https://packagecontrol.io/packages/BracketHighlighter)
 6. [Emmet](https://packagecontrol.io/packages/Emmet)
+7. [LiveReload(for sublime text 3 only)](https://packagecontrol.io/packages/LiveReload)
+8. [LiveReload(for sublime text 2 only)](https://github.com/yjlintw/livereload-sublime2)
